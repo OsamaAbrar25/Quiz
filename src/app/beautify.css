@@ -1,0 +1,76 @@
+.background
+{
+-fx-background-image: url("quizB.jpg");
+-fx-background-color: #cccccc;
+-fx-background-size: cover;
+}
+
+.backgroundIn
+{
+-fx-background-color: rgba(105,105,105,0.8);
+}
+
+.input{
+-fx-border:2px;
+-fx-border-radius: 5px;
+-fx-outline:none;
+-fx-padding:8px;
+-fx-box-sizing:border-box;
+-fx-margin:8px;
+}
+
+.back
+{
+-fx-background-image: url("back.png");
+-fx-background-size: cover;
+-fx-background-color: transparent;
+}
+
+
+
+.settings
+{
+-fx-background-image: url("settingsss.png");
+-fx-background-size: cover;
+-fx-background-color: transparent;
+}
+
+.arrow
+{
+-fx-background-image: url("arrow.png");
+-fx-background-size: cover;
+-fx-background-color: transparent;
+}
+
+.delete
+{
+-fx-background-image: url("Delete.png");
+-fx-background-size: cover;
+-fx-background-color: transparent;
+}
+
+.buttonB{
+    -fx-background-color: #01FF70;
+    -fx-display:inline;
+    -fx-border: 5px;
+    -fx-text-align:center;
+    -fx-line-height:100px;
+    -fx-font-family: arial;
+    -fx-font-weight: bold;
+    -fx-color:#0082bf;
+    -fx-background-color:#0082bf;
+    -fx-border-radius:0px;
+}
+
+
+
+.label{
+    -fx-font-family: "Times New Roman";
+    -fx-font-weight: bold;
+}
+
+.radio
+{
+-fx-font-family: "Times New Roman";
+-fx-font-weight: bold;
+}

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="544.0" prefWidth="860.0" styleClass="background" stylesheets="@beautify.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.Input">
+   <children>
+      <Region prefHeight="31.0" prefWidth="860.0" VBox.vgrow="ALWAYS" />
+      <HBox prefHeight="76.0" prefWidth="860.0">
+         <children>
+            <Region prefHeight="72.0" prefWidth="27.0" />
+            <Button mnemonicParsing="false" onAction="#back" prefHeight="46.0" prefWidth="64.0" styleClass="back" HBox.hgrow="ALWAYS" />
+            <Region prefHeight="72.0" prefWidth="38.0" />
+            <Button mnemonicParsing="false" onAction="#Name" prefHeight="52.0" prefWidth="51.0" styleClass="settings" HBox.hgrow="ALWAYS" />
+            <Region prefHeight="54.0" prefWidth="164.0" HBox.hgrow="ALWAYS" />
+            <VBox>
+               <children>
+                  <Label text="Quiz Questions" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <Region prefHeight="100.0" prefWidth="340.0" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <HBox prefHeight="47.0" prefWidth="860.0">
+         <children>
+            <Label fx:id="Sub" prefHeight="29.0" prefWidth="863.0" text="Subject" textAlignment="CENTER" textFill="WHITE" wrapText="true" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Region layoutX="10.0" layoutY="115.0" prefHeight="37.0" prefWidth="860.0" VBox.vgrow="ALWAYS" />
+      <HBox prefHeight="76.0" prefWidth="860.0">
+         <children>
+            <Region prefHeight="52.0" prefWidth="10.0" />
+            <ComboBox fx:id="choose" prefHeight="33.0" prefWidth="89.0" styleClass="buttonB" HBox.hgrow="ALWAYS" />
+            <Region prefHeight="52.0" prefWidth="8.0" />
+            <Button mnemonicParsing="false" onAction="#chooseIt" prefHeight="33.0" prefWidth="44.0" styleClass="arrow" text="-&gt;" />
+            <Region prefHeight="52.0" prefWidth="8.0" />
+            <TextField fx:id="Question" prefHeight="33.0" prefWidth="559.0" promptText="Enter the question." styleClass="input" stylesheets="@beautify.css" HBox.hgrow="ALWAYS" />
+            <Region prefHeight="33.0" prefWidth="8.0" />
+            <Button mnemonicParsing="false" onAction="#clearAll" prefHeight="33.0" styleClass="buttonB" text="Clear" />
+            <Region prefHeight="33.0" prefWidth="8.0" />
+            <Button mnemonicParsing="false" onAction="#delete" prefHeight="33.0" prefWidth="60.0" styleClass="buttonB" text="Delete" />
+            <Region prefHeight="52.0" prefWidth="6.0" />
+         </children>
+      </HBox>
+      <Region prefHeight="25.0" prefWidth="167.0" />
+      <Region layoutX="10.0" layoutY="90.0" prefHeight="90.0" prefWidth="860.0" VBox.vgrow="ALWAYS" />
+      <HBox VBox.vgrow="ALWAYS">
+         <children>
+            <Region layoutX="186.0" layoutY="10.0" prefHeight="25.0" prefWidth="100.0" HBox.hgrow="ALWAYS" />
+            <TextField fx:id="Option1" prefHeight="25.0" prefWidth="176.0" promptText="Option1" styleClass="input" HBox.hgrow="ALWAYS" />
+            <Region prefHeight="33.0" prefWidth="94.0" HBox.hgrow="ALWAYS" />
+            <TextField fx:id="Option2" promptText="Option2" styleClass="input" HBox.hgrow="ALWAYS" />
+            <Region layoutX="454.0" layoutY="10.0" prefHeight="25.0" prefWidth="100.0" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <Region layoutX="10.0" layoutY="205.0" prefHeight="90.0" prefWidth="860.0" VBox.vgrow="ALWAYS" />
+      <HBox>
+         <children>
+            <Region layoutX="191.0" layoutY="10.0" prefHeight="25.0" prefWidth="100.0" HBox.hgrow="ALWAYS" />
+            <TextField fx:id="Option3" prefHeight="25.0" prefWidth="181.0" promptText="Option3" styleClass="input" HBox.hgrow="ALWAYS" />
+            <Region prefHeight="33.0" prefWidth="98.0" HBox.hgrow="ALWAYS" />
+            <TextField fx:id="Option4" promptText="Option4" styleClass="input" HBox.hgrow="ALWAYS" />
+            <Region layoutX="456.0" layoutY="10.0" prefHeight="25.0" prefWidth="100.0" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <Region layoutX="10.0" layoutY="416.0" prefHeight="90.0" prefWidth="860.0" VBox.vgrow="ALWAYS" />
+      <HBox>
+         <children>
+            <Region prefHeight="25.0" prefWidth="300.0" HBox.hgrow="ALWAYS" />
+            <TextField fx:id="Correct" prefHeight="25.0" prefWidth="300.0" promptText="Correct Answer" styleClass="input" HBox.hgrow="ALWAYS" />
+            <Region prefHeight="25.0" prefWidth="300.0" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <Region prefHeight="51.0" prefWidth="860.0" VBox.vgrow="ALWAYS" />
+      <HBox prefHeight="58.0" prefWidth="860.0">
+         <children>
+            <Region prefHeight="25.0" prefWidth="661.0" HBox.hgrow="ALWAYS" />
+            <Button mnemonicParsing="false" onAction="#Add" prefHeight="33.0" prefWidth="94.0" styleClass="buttonB" text="Add/Change" HBox.hgrow="ALWAYS" />
+            <Region layoutX="10.0" layoutY="10.0" prefHeight="25.0" prefWidth="20.0" />
+            <Button layoutX="768.0" layoutY="10.0" mnemonicParsing="false" onAction="#deleteAll" prefHeight="33.0" prefWidth="74.0" styleClass="buttonB" text="Delete All" HBox.hgrow="ALWAYS" />
+            <Region layoutX="10.0" layoutY="10.0" prefHeight="25.0" prefWidth="7.0" HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+      <Region layoutX="10.0" layoutY="441.0" prefHeight="27.0" prefWidth="860.0" VBox.vgrow="ALWAYS" />
+   </children>
+</VBox>
